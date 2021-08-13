@@ -30,10 +30,12 @@ if (!SpeechRecognition) {
 
         let transcript = event.results[0][0].transcript;
         input.value = transcript;
-        /* setTimeout(() => {
-             search(transcript);
-         }, 2000)*/
-        input.style.backgroundColor = transcript;
+        setTimeout(() => {
+            search(transcript);
+        }, 2000)
     })
 }
 
+function search(searchvalue) {
+    window.location.href = `https://www.google.com/search?q=${searchvalue}`;
+}
