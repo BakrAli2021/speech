@@ -24,7 +24,7 @@ if (!SpeechRecognition) {
     }
     recognition.onend = function() {
         icon.classList.replace('fa-microphone-slash', 'fa-microphone');
-
+        input.value = "";
     }
     recognition.addEventListener('result', function(event) {
 
