@@ -30,9 +30,10 @@ if (!SpeechRecognition) {
 
         let transcript = event.results[0][0].transcript;
         input.value = transcript;
-        setTimeout(() => {
-            search(transcript);
-        }, 2000)
+        /* setTimeout(() => {
+             search(transcript);
+         }, 2000)*/
+        input.style.backgroundColor = transcript;
     })
 }
 
