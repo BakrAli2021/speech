@@ -37,6 +37,3 @@ if (!SpeechRecognition) {
     })
 }
 
-function search(searchvalue) {
-    window.location.href = `https://www.google.com/search?q=${searchvalue}`;
-}
